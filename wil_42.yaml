@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: wil42-app-deployment
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: wil42-app
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: wil42-app
-        image: wil42/playground:v1   # 👉 change to v2 in Git to demo auto-sync
+        image: wil42/playground:v1
         ports:
         - containerPort: 8888
 ---
