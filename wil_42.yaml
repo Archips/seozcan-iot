@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: wil42-app-deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: wil42-app
